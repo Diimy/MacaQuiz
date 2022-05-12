@@ -33,6 +33,10 @@ public class Player {
 		
 		if (codigo == KeyEvent.VK_UP) { 
 			dy = -3;
+			ImageIcon referencia = new ImageIcon("res\\frente.png");
+			imagem = referencia.getImage();
+			altura = imagem.getHeight(null);
+			largura = imagem.getWidth(null);
 		}
 		else if (codigo == KeyEvent.VK_DOWN) {
 			dy = 3;
@@ -54,10 +58,10 @@ public class Player {
 			imagem = referencia.getImage();
 			altura = imagem.getHeight(null);
 			largura = imagem.getWidth(null);
-			if (codigo == KeyEvent.VK_RIGHT && codigo == KeyEvent.VK_SHIFT) {
-				dx = 10;
-			}
-			
+		
+		}	
+		else if (codigo == KeyEvent.VK_SHIFT & codigo == KeyEvent.VK_RIGHT) {
+			dx = 8;
 		}
 		else if (codigo == KeyEvent.VK_ENTER) {
 			ImageIcon referencia = new ImageIcon("res\\smile.jpg");
@@ -66,30 +70,26 @@ public class Player {
 			largura = imagem.getWidth(null);
 		}
 		
-		else if (codigo == KeyEvent.VK_SHIFT) {
-			dx = 10;
-			ImageIcon referencia = new ImageIcon("res\\monke.gif");
-			imagem = referencia.getImage();
-			altura = imagem.getHeight(null);
-			largura = imagem.getWidth(null);
-			}
-		
 	}
 	
 	public void keyReleased(KeyEvent tecla) {
 		int codigo = tecla.getKeyCode();
 		
 		if (codigo == KeyEvent.VK_UP) {
-			
-		}
-		if (codigo == KeyEvent.VK_DOWN) {
 			dy = 0;
 			ImageIcon referencia = new ImageIcon("res\\frente.png");
 			imagem = referencia.getImage();
 			altura = imagem.getHeight(null);
 			largura = imagem.getWidth(null);
 		}
-		if (codigo == KeyEvent.VK_LEFT) {
+		else if (codigo == KeyEvent.VK_DOWN) {
+			dy = 0;
+			ImageIcon referencia = new ImageIcon("res\\frente.png");
+			imagem = referencia.getImage();
+			altura = imagem.getHeight(null);
+			largura = imagem.getWidth(null);
+		}
+		else if (codigo == KeyEvent.VK_LEFT) {
 			dx = 0;
 			ImageIcon referencia = new ImageIcon("res\\ESQUERDA.png");
 			imagem = referencia.getImage();
@@ -103,25 +103,18 @@ public class Player {
 			imagem = referencia.getImage();
 			altura = imagem.getHeight(null);
 			largura = imagem.getWidth(null);
-			
-			 if (codigo == KeyEvent.VK_RIGHT && codigo == KeyEvent.VK_SHIFT) {
-				dx = 0;
-			}
-			
+		
 		}
+		else if (codigo == KeyEvent.VK_SHIFT && codigo == KeyEvent.VK_RIGHT) {
+			dx = 0;
+		}
+		
 		else if (codigo == KeyEvent.VK_ENTER) {
 			ImageIcon referencia = new ImageIcon("res\\MACMACACO .png");
 			imagem = referencia.getImage();
 			altura = imagem.getHeight(null);
 			largura = imagem.getWidth(null);
 		}
-		else if (codigo == KeyEvent.VK_SHIFT) {
-			dx = 10;
-			ImageIcon referencia = new ImageIcon("res\\MACMACACO .png");
-			imagem = referencia.getImage();
-			altura = imagem.getHeight(null);
-			largura = imagem.getWidth(null);
-			}
 	}
 
 	public int getX() {

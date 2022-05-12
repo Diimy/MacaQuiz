@@ -5,12 +5,14 @@ import javax.swing.JOptionPane;
 public class TesteBD {
 
     public static void main(String[] args) {
-        //Menu de teste (apenas para CRUD do jogador)
+        
+        //Menu de escolha jogador/administrador
         String menu1 = "1-Administrador\n2-Jogador";
         String menu2 = "1-Cadastrar\n2-Atualizar\n3-Apagar\n4-Listar\n0-Sair";
         int op1, op2;
         String idJogador, apelido, senha, patente, idAdmin;
         int pontuacaoMaxima;
+        //objetos das calsses Administrador e Jogador
         Jogador j = new Jogador();
         Administrador admin = new Administrador();
         op1 = Integer.parseInt(JOptionPane.sowInputDialog(menu1));

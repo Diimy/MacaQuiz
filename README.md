@@ -1,6 +1,5 @@
 # MacaQuiz
-Projeto Integrador Interdisciplinar - Macaquiz: um jogo educativo sobre programação com temática de macaco
-a expectativa é de atualizar constantemente o jogo até ficar como o esperado
+Projeto Integrador Interdisciplinar - Macaquiz: um jogo educativo sobre programação com temática de macaco. Nossa expectativa é de atualizar constantemente o jogo até ficar como o esperado.
 
 Versão alfa 0.0.1 - 10/05/2022
   -> Melhora na movimentação.

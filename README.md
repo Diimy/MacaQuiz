@@ -11,6 +11,11 @@ Versão alfa 0.0.2 - 12/05/2022
   -> Criação do programa TesteBD, utilizado para testar as interações entre as classes e o banco de dados.
 
 Versão alfa 0.0.3 - 22/05/2022
-  -> Criação das interfaces e funcionalidades do jogo na classe Interface, através de subclasses e métodos da classe javax.swing.JFrame, com interfaces funcionais para
+  -> Criação das interfaces e funcionalidades do jogo na classe Macaquiz, através de subclasses e métodos da classe javax.swing.JFrame, com interfaces funcionais para
   login, cadastro, introdução, menu do jogador com foto, menu do administrador (sem funções nessa versão), ranking, configurações e perfil.
   -> Criação da classe DAO (Data Acess Object), com a função de validar a existência de jogadores/administradores no banco de dados, sendo utilizada no login.
+
+Versão alfa 0.0.4 - 22/05/2022
+  -> Criação da classe GeradorDeQuestao que contém e gera as questões utilizadas pela classe Macaquiz.
+  -> Criação dos painéis de interface: Nível Fácil, Questão Fácil, Resposta Correta e Resposta Incorreta, incluindo funcionalidades para estes.
+  -> Criação de novas patentes, as quais são determinadas conforme a pontuação máxima atingida pelo jogador e representadas por imagens do tipo gif.

@@ -23,3 +23,8 @@ Versão alfa 0.0.4 - 22/05/2022
 Criação da classe GeradorDeQuestao que contém e gera as questões utilizadas pela classe Macaquiz.
 Criação dos painéis de interface: Nível Fácil, Questão Fácil, Resposta Correta e Resposta Incorreta, incluindo funcionalidades para estes.
 Criação de novas patentes, as quais são determinadas conforme a pontuação máxima atingida pelo jogador e representadas por imagens do tipo gif.
+
+
+Versão alfa 0.0.5 - 24/05/2022
+
+Mudança na tela de fundo do jogo e mudança no macaco. O macaco agora consegue correr ao segurar o SHIFT e consegue pular com a tecla W. Foi adicionado colisão na janela então o macaco não sai mais da Janela. Foi alterado o design do personagem também, agora existe uma animação para quando está parado e outra quando começa a correr. Cuidado ao apertar a tecla Enter, é uma habilidade que está sendo melhorada ainda

@@ -21,6 +21,6 @@ create table Administrador (idAdmin varchar(20) primary key, senha varchar(20) n
 
 6: Abra "ConnectionFactory.java" e, na linha 9 do código, mude a senha de "ECA302" para a senha do seu SQL Server.
 
-7: Agora basta clicar com o botão direito em "Macaquiz.java" e selecionar "Run file" (ou a tradução para português).
+7: Agora basta clicar com o botão direito em "Macaquiz.java" e selecionar "Run file" (ou a tradução para português). Talvez a opção Run File não esteja disponível, caso isso aconteça, clique com o botão direito no projeto "macaquiz" e selecione a opção de solucionar problemas do projeto.
 
 Obs.: Na primeira vez, o jogo demorará um pouco para abrir, mas depois ele sempre abrirá rapidamente.

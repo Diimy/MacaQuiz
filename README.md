@@ -27,4 +27,11 @@ Criação de novas patentes, as quais são determinadas conforme a pontuação m
 
 Versão alfa 0.0.5 - 24/05/2022
 
-Mudança na tela de fundo do jogo e mudança no macaco. O macaco agora consegue correr ao segurar o SHIFT e consegue pular com a tecla W. Foi adicionado colisão na janela então o macaco não sai mais da Janela. Foi alterado o design do personagem também, agora existe uma animação para quando está parado e outra quando começa a correr. Cuidado ao apertar a tecla Enter, é uma habilidade que está sendo melhorada ainda
+Mudança na tela de fundo do jogo e mudança no macaco. O macaco agora consegue correr ao segurar o SHIFT e consegue pular com a tecla W. Foi adicionado colisão na janela então o macaco não sai mais da Janela. Foi alterado o design do personagem também, agora existe uma animação para quando está parado e outra quando começa a correr. Cuidado ao apertar a tecla Enter, é uma habilidade que está sendo melhorada ainda.
+
+Versão alfa 0.0.6 - 25/05/2022
+
+Criação da classe Questao, substituindo funções da classe GeradorDeQuestao que não mais existe no projeto.
+Os painéis de interface adicionados na versão 0.0.4 foram excluídos, pois foi decidido criar apenas um painel de interface inicial do quiz e um painel de pergunta que pode mostrar qualquer pergunta.
+Criação dos painéis de interface que aparecem caso o usuário perca todas as vidas e caso este chegue ao final do quiz, com pontuação final e patente.
+Criação da pasta "Banco de dados" que contém o script que deve ser usado para a criação do banco de dados necessário ao funcionamento do jogo.

@@ -12,28 +12,36 @@ public class Player {
 	private int altura, largura;
 	
 	public Player() {
-		this.x = 100;
-		this.y = 100; 
+		//coordenada em que o jogador vai nascer
+		this.x = 20;
+		this.y = 790; 
 	}
 	
+	//definindo a imagem padrão do jogador
 	public void load() {
 		ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
 		imagem = referencia.getImage();
+		
+		//altura e largura da imagem definidas pelo tamanho da imagem
+		//por isso null
 		altura = imagem.getHeight(null);
 		largura = imagem.getWidth(null);
 	}
 	
 	public void update() {
 		
-		//deslocamento X do macaco
+		//deslocamento X do player
 		x = x + dx;
-		//deslocamento Y do macaco
+		
+		//deslocamento Y do player
 		y = y + dy;
+		
 		//definindo limite do macaco
+		//para ficar "preso" na tela
 		x = Clamp(x,-10,1650);
 		y = Clamp(y,0,790);
 		
-		//simulação gravidade
+		//simulando gravidade
 		if (y<=800) {
 			dy=5;
 		}
@@ -47,20 +55,19 @@ public class Player {
 	public void keyPressed(KeyEvent tecla) {
 		int codigo = tecla.getKeyCode();
 		
+		//pulo do player
 		if (codigo == KeyEvent.VK_W) { 
-			dy = -150;
-			ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
-			imagem = referencia.getImage();
-			altura = imagem.getHeight(null);
-			largura = imagem.getWidth(null);
+			dy = dy*-10;
+			
 		}
+		
+		//para baixo
 		else if (codigo == KeyEvent.VK_S) {
 			dy = 3;
-			ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
-			imagem = referencia.getImage();
-			altura = imagem.getHeight(null);
-			largura = imagem.getWidth(null);
+			
 		}
+		
+		//para a esquerda
 		else if (codigo == KeyEvent.VK_A) {
 			dx = -3;
 			ImageIcon referencia = new ImageIcon("res\\monk_left.gif");
@@ -68,6 +75,8 @@ public class Player {
 			altura = imagem.getHeight(null);
 			largura = imagem.getWidth(null);
 		}
+		
+		//para a direita
 		else if (codigo == KeyEvent.VK_D) {
 			dx = 3;
 			ImageIcon referencia = new ImageIcon("res\\monk_right.gif");
@@ -76,41 +85,40 @@ public class Player {
 			largura = imagem.getWidth(null);
 
 		}
+		
+		//poder especial em desenvolvimento
 		else if (codigo == KeyEvent.VK_ENTER) {
 			ImageIcon referencia = new ImageIcon("res\\smile.jpg");
 			imagem = referencia.getImage();
 			altura = imagem.getHeight(null);
 			largura = imagem.getWidth(null);
 		}
+		
+		//aumenta a velocidade do player
 		else if (codigo == KeyEvent.VK_SHIFT) {
 				dx = dx * 2;
 				if (dx>6) {
 					dx = 6;
 				}
 				if (dx<-6){
-					dx = -3;
+					dx = -6;
 				}
 		}
 		
 		
 	}
 	
+	//o que acontece quando solta a tecla pressionada
 	public void keyReleased(KeyEvent tecla) {
 		int codigo = tecla.getKeyCode();
 		
 		if (codigo == KeyEvent.VK_W) {
 			dy = 5;
-			ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
-			imagem = referencia.getImage();
-			altura = imagem.getHeight(null);
-			largura = imagem.getWidth(null);
+			
 		}
 		else if (codigo == KeyEvent.VK_S) {
 			dy = 3;
-			ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
-			imagem = referencia.getImage();
-			altura = imagem.getHeight(null);
-			largura = imagem.getWidth(null);
+			
 		}
 		else if (codigo == KeyEvent.VK_A) {
 			dx = 0;
@@ -140,7 +148,7 @@ public class Player {
 				dx = 3;
 			}
 			if (dx<-6){
-				dx = -3;
+				dx = -6;
 			}
 	}
 		

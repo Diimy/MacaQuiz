@@ -13,23 +13,33 @@ import javax.swing.Timer;
 
 public class Fase extends JPanel implements ActionListener{
 	
+	//objeto do tipo imagem:
 	private Image fundo;
+	
+	
 	private Player player;
 	private Timer timer;
 		
+	//construtor
 	public Fase(){
 			setFocusable(true);
 			setDoubleBuffered(true);
 			
+			//================= define a imagem de fundo ===================
 			ImageIcon referencia = new ImageIcon("res\\Background.jpg");
 			fundo = referencia.getImage();
+	        //==============================================================
+			
+	        //instanciando jogador 
+			player = new Player();
 	        
-	        player = new Player();
+	        //carrega a imagem do jogador
 	        player.load();
 	        
 	        addKeyListener(new TecladoAdapter());
 	        
-	        timer = new Timer(5, this);
+	        //velocidade do jogo
+	        timer = new Timer(7, this);
 	        timer.start();
 	    }
 		
@@ -42,6 +52,7 @@ public class Fase extends JPanel implements ActionListener{
 		}
 
 	@Override
+	//atualiza a tela
 	public void actionPerformed(ActionEvent e) {
 		player.update();
 		repaint();

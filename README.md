@@ -35,3 +35,5 @@ Criação da classe Questao, substituindo funções da classe GeradorDeQuestao q
 Os painéis de interface adicionados na versão 0.0.4 foram excluídos, pois foi decidido criar apenas um painel de interface inicial do quiz e um painel de pergunta que pode mostrar qualquer pergunta.
 Criação dos painéis de interface que aparecem caso o usuário perca todas as vidas e caso este chegue ao final do quiz, com pontuação final e patente.
 Criação da pasta "Banco de dados" que contém o script que deve ser usado para a criação do banco de dados necessário ao funcionamento do jogo.
+ Agora o Player tem local de nascimento definido também e foram adicionados comentários ao código do jogo para melhor entendimento
+

@@ -35,10 +35,13 @@ Macaquiz - Histórico de Updates:
   Criação dos painéis de interface: Nível Fácil, Questão Fácil, Resposta Correta e Resposta Incorreta, incluindo funcionalidades para estes.
   Criação de novas patentes, as quais são determinadas conforme a pontuação máxima atingida pelo jogador e representadas por imagens do tipo gif.
 
-  Macaquiz versão alfa 0.0.4 - 25/05/2022
+  Macaquiz versão alfa 0.0.4 - 24/05/2022
 
   Criação da classe Questao, substituindo funções da classe GeradorDeQuestao que não mais existe no projeto.
-  Os painéis de interface adicionados na versão 0.0.4 foram excluídos, pois foi decidido criar apenas um painel de interface inicial do quiz e um painel de pergunta que pode mostrar qualquer pergunta.
+  Os painéis de interface adicionados na versão 0.0.3 foram excluídos, pois foi decidido criar apenas um painel de interface inicial do quiz e um painel de pergunta que pode mostrar qualquer pergunta.
   Criação dos painéis de interface que aparecem caso o usuário perca todas as vidas e caso este chegue ao final do quiz, com pontuação final e patente.
   Criação da pasta "Banco de dados" que contém o script que deve ser usado para a criação do banco de dados necessário ao funcionamento do jogo.
 
+  Macaquiz versão alfa 0.0.5 - 25/05/2022
+  Inserção de todas as 15 questões do jogo no banco de dados, tornando o quiz realmente funcional.
+  Criação do painel de interface Alterar Jogador que pode ser acessado por um administrador, possibilitando a alteração da pontuação e da patente de qualquer jogador.

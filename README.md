@@ -5,14 +5,14 @@ Foram criados os projetos macaquiz e macacada, sendo que macaquiz contém o quiz
 
 Macacada - Histórico de updates:
 
-  Versão alfa 0.0.1 - 10/05/2022
+  Macacada versão alfa 0.0.1 - 10/05/2022
   Melhora na movimentação.
   Novas animações de movimentação.
 
-  Versão alfa 0.0.2 - 24/05/2022
+  Macacada versão alfa 0.0.2 - 24/05/2022
   Mudança na tela de fundo do jogo e mudança no macaco. O macaco agora consegue correr ao segurar o SHIFT e consegue pular com a tecla W. Foi adicionado colisão na janela então o macaco não sai mais da Janela. Foi alterado o design do personagem também, agora existe uma animação para quando está parado e outra quando começa a correr. Cuidado ao apertar a tecla Enter, é uma habilidade que está sendo melhorada ainda.
 
-  Versão alfa 0.0.3 - 25/05/2022
+  Macacada versão alfa 0.0.3 - 25/05/2022
   Agora o Player tem local de nascimento definido também e foram adicionados comentários ao código do jogo para melhor entendimento.
 
 Macaquiz - Histórico de Updates:
@@ -45,3 +45,6 @@ Macaquiz - Histórico de Updates:
   Macaquiz versão alfa 0.0.5 - 25/05/2022
   Inserção de todas as 15 questões do jogo no banco de dados, tornando o quiz realmente funcional.
   Criação do painel de interface Alterar Jogador que pode ser acessado por um administrador, possibilitando a alteração da pontuação e da patente de qualquer jogador.
+  
+  Macaquiz versão alfa 0.0.6 - 29/05/2022
+  Criação do painel de Conquistas, que pode ser acessado através do menu e contém uma conquista para cada patente acima da inicial. As conquistas são mostradas de acordo com a patente do jogador.

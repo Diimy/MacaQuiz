@@ -46,4 +46,4 @@ Macaquiz - Histórico de Updates:
   Criação do painel de Conquistas, que pode ser acessado através do menu e contém uma conquista para cada patente acima da inicial. As conquistas são mostradas de acordo com a patente do jogador.
   
   Macaquiz versão alfa 0.0.7 - 02/02/2022
-  A partir desta versão, além da possibilidade de alterar seu apelido, o jogador também pode alterar sua senha por meio do mesmo painel de perfil.
+  Correção de bug (ao abrir o painel de conquistas, estas não apareciam caso o jogador houvesse conquistado a patente mais alta). A partir desta versão, além da possibilidade de alterar seu apelido, o jogador também pode alterar sua senha por meio do mesmo painel de perfil.

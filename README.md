@@ -40,7 +40,7 @@ Macaquiz - Histórico de Updates:
 
   Macaquiz versão alfa 0.0.5 - 25/05/2022
   Inserção de todas as 15 questões do jogo no banco de dados, tornando o quiz realmente funcional.
-  Criação do painel de interface Alterar Jogador que pode ser acessado por um administrador, possibilitando a alteração da pontuação e da patente de qualquer jogador.
+  Criação do painel de interface Alterar Jogador que pode ser acessado por um administrador, possibilitando a alteração da pontuação de qualquer jogador.
   
   Macaquiz versão alfa 0.0.6 - 29/05/2022
   Criação do painel de Conquistas, que pode ser acessado através do menu e contém uma conquista para cada patente acima da inicial. As conquistas são mostradas de acordo com a patente do jogador.

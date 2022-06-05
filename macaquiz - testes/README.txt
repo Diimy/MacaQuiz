@@ -2,7 +2,7 @@ Testes unitários:
 
 [TU01] Cadastrar Jogador - https://youtu.be/3BSf0rYtpts
 [TU02] Conectar Jogador - https://youtu.be/4PWfhTMAiqc
-[TU03] Iniciar Quiz - https://youtu.be/_WjO7pnmMxQ
+[TU03] Iniciar Quiz - https://youtu.be/SqzAypW4zos
 [TU04] Acessar Ranking - https://youtu.be/66r41sC7xB4
 [TU05] Acessar Conquistas - https://youtu.be/hXwkCMQ-Ldo
 [TU06] Alterar Perfil - https://youtu.be/yHS_MoK47MM

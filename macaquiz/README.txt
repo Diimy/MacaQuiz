@@ -2,7 +2,7 @@ Requisitos para rodar o jogo: MySQL, plataforma Java e NetBeans IDE (versão 13 
 
 Passos para rodar o jogo:
 
-1: Criar um banco de dados com o script disponível na pasta "Banco de Dados" deste repositório.
+1: Criar um banco de dados com o script disponível na pasta "Banco de Dados" do repositório no GitHub.
 
 2: Instalar a fonte presente na pasta macaquiz\src\main\resources. Basta abrir o arquivo zip, abrir o arquivo "JUNGLEFE.TTF" e selecionar "Install".
 

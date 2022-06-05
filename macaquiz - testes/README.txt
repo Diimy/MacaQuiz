@@ -1,4 +1,4 @@
 Testes unitários:
 
-[TU01] Conectar jogador - link
-[TU02] Cadastrar jogador - link
+[TU01] Cadastrar jogador - https://youtu.be/3BSf0rYtpts
+[TU02] Conectar jogador - link

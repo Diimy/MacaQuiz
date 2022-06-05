@@ -8,3 +8,4 @@ Testes unitários:
 [TU06] Alterar Perfil - https://youtu.be/yHS_MoK47MM
 [TU07] Conectar Administrador - https://youtu.be/teh5-I5yhVE
 [TU08] Alterar Jogador - https://youtu.be/0Ykluwr3xXQ
+[TU09] Sair - https://youtu.be/nkpCf9wnOho

@@ -7,16 +7,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+
+
 import javax.swing. ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
 public class Fase extends JPanel implements ActionListener{
 	
-	//objeto do tipo imagem:
 	private Image fundo;
-	
-	
 	private Player player;
 	private Timer timer;
 		
@@ -25,10 +24,11 @@ public class Fase extends JPanel implements ActionListener{
 			setFocusable(true);
 			setDoubleBuffered(true);
 			
-			//================= define a imagem de fundo ===================
+			
+			
 			ImageIcon referencia = new ImageIcon("res\\Background.jpg");
 			fundo = referencia.getImage();
-	        //==============================================================
+	      
 			
 	        //instanciando jogador 
 			player = new Player();

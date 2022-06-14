@@ -22,8 +22,7 @@ public class Player {
 		ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
 		imagem = referencia.getImage();
 		
-		//altura e largura da imagem definidas pelo tamanho da imagem
-		//por isso null
+		//altura e largura do player
 		altura = imagem.getHeight(null);
 		largura = imagem.getWidth(null);
 	}
@@ -41,13 +40,7 @@ public class Player {
 		x = Clamp(x,-10,1650);
 		y = Clamp(y,0,790);
 		
-		//simulando gravidade
-		if (y<=800) {
-			dy=5;
-		}
-		else {
-			dy=-1;
-		}
+		
 		System.out.println("X: " + x);
 		System.out.println("Y: " + y);
 	}
@@ -56,14 +49,22 @@ public class Player {
 		int codigo = tecla.getKeyCode();
 		
 		//pulo do player
+		
 		if (codigo == KeyEvent.VK_W) { 
-			dy = dy*-10;
-			
+			dy = -10;
+			ImageIcon referencia = new ImageIcon("res\\monk_jump.gif");
+			imagem = referencia.getImage();
+			altura = imagem.getHeight(null);
+			largura = imagem.getWidth(null);
 		}
 		
 		//para baixo
 		else if (codigo == KeyEvent.VK_S) {
 			dy = 3;
+			ImageIcon referencia = new ImageIcon("res\\monk_down.gif");
+			imagem = referencia.getImage();
+			altura = 50;
+			largura = 50;
 			
 		}
 		
@@ -96,13 +97,15 @@ public class Player {
 		
 		//aumenta a velocidade do player
 		else if (codigo == KeyEvent.VK_SHIFT) {
-				dx = dx * 2;
-				if (dx>6) {
-					dx = 6;
-				}
-				if (dx<-6){
-					dx = -6;
-				}
+				
+			//limita a velocidade que o personagem consegue chegar
+			dx = dx * 2;
+			if (dx>6) {
+				dx = 6;
+			}
+			if (dx<-6){
+				dx = -6;
+			}
 		}
 		
 		
@@ -114,15 +117,22 @@ public class Player {
 		
 		if (codigo == KeyEvent.VK_W) {
 			dy = 5;
+			ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
+			imagem = referencia.getImage();
+			altura = imagem.getHeight(null);
+			largura = imagem.getWidth(null);
 			
 		}
 		else if (codigo == KeyEvent.VK_S) {
 			dy = 3;
-			
+			ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
+			imagem = referencia.getImage();
+			altura = imagem.getHeight(null);
+			largura = imagem.getWidth(null);
 		}
 		else if (codigo == KeyEvent.VK_A) {
 			dx = 0;
-			ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
+			ImageIcon referencia = new ImageIcon("res\\monk_left_static.gif");
 			imagem = referencia.getImage();
 			altura = imagem.getHeight(null);
 			largura = imagem.getWidth(null);
@@ -130,7 +140,7 @@ public class Player {
 		}
 		else if (codigo == KeyEvent.VK_D) {
 			dx = 0;
-			ImageIcon referencia = new ImageIcon("res\\monk_static.gif");
+			ImageIcon referencia = new ImageIcon("res\\monk_right_static.gif");
 			imagem = referencia.getImage();
 			altura = imagem.getHeight(null);
 			largura = imagem.getWidth(null);
@@ -143,6 +153,8 @@ public class Player {
 			largura = imagem.getWidth(null);
 		}
 		else if (codigo == KeyEvent.VK_SHIFT) {
+			
+			//limita a velocidade que o personagem consegue chegar
 			dx = dx/2;
 			if (dx>6) {
 				dx = 3;
@@ -150,7 +162,7 @@ public class Player {
 			if (dx<-6){
 				dx = -6;
 			}
-	}
+		}
 		
 	}
 
@@ -166,7 +178,7 @@ public class Player {
 		return imagem;
 	}
 	
-	//classe que impede do macaco de fugir da tela do jogo
+	//classe que impede do macaco de sair da tela do jogo
 	private int Clamp(int pos, int min, int max) {
 		if (pos>max)
 			return max;
